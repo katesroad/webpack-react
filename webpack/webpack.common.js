@@ -26,8 +26,8 @@ module.exports = {
 				use: [
 					{
 						loader: 'babel-loader',
-            options: {
-              // the preset for react jsx grammar
+						options: {
+							// the preset for react jsx grammar
 							presets: ['@babel/preset-react'],
 						},
 					},
@@ -35,7 +35,7 @@ module.exports = {
 			},
 			{
 				test: /\.s?css$/,
-				use: ['style-loader', 'css-loader'],
+				use: ['style-loader', 'css-loader', 'sass-loader'],
 			},
 			{
 				test: /\.(?:ico|gif|png|jpg|jpeg)$/i,
